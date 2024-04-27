@@ -24,9 +24,6 @@ const Priority = ({ level, levels, setLevels, setNewNoteObj }) => {
   };
   return (
     <div className={styles.priorityBox} id={id} onClick={handleClick}>
-      <h4 id={id} onClick={handleClick} className={styles.priorityName}>
-        {importance}
-      </h4>
       <div className={classname} id={id} onClick={handleClick}>
         <div
           className={`${styles[importance]} ${styles.priority}`}

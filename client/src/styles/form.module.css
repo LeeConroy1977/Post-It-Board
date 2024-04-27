@@ -2,6 +2,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.formNav {
+  width: 80%;
+  height: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+.formNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.formNav ul li {
+  list-style: none;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  /* margin-left: 0.2rem; */
+}
+
+.noteStyles {
+  background-color: #feff9c;
+}
+.noteFonts {
+  background-color: #cdfc93;
+}
+.noteFontColour {
+  background-color: #e4eeff;
 }
 
 .form {
@@ -10,16 +49,18 @@
   justify-content: flex-start;
   align-items: center;
   width: 70%;
-  height: 90%;
+  height: 80%;
   background-color: white;
-  margin: 2rem;
+  /* border: 1px solid black; */
   padding: 1.4rem;
 }
 
 .form textarea {
-  width: 100%;
+  width: 90%;
   height: 30%;
 }
 label {
   margin-right: auto;
+
+  padding: 0.3rem 0.5rem;
 }

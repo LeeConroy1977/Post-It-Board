@@ -32,19 +32,22 @@ const prioritiesArr = [
 const Priorities = ({ setNewNoteObj }) => {
   const [levels, setLevels] = useState(prioritiesArr);
   return (
-    <div className={styles.prioritiesContainer}>
-      {levels.map((level) => {
-        return (
-          <Priority
-            level={level}
-            key={level.id}
-            setLevels={setLevels}
-            levels={levels}
-            setNewNoteObj={setNewNoteObj}
-          />
-        );
-      })}
-    </div>
+    <>
+      <h4 className={styles.priorityLabel}>Priority Indicator</h4>
+      <div className={styles.prioritiesContainer}>
+        {levels.map((level) => {
+          return (
+            <Priority
+              level={level}
+              key={level.id}
+              setLevels={setLevels}
+              levels={levels}
+              setNewNoteObj={setNewNoteObj}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

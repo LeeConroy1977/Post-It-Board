@@ -2,45 +2,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 100%;
+  width: 90%;
   height: 28%;
   gap: 0.5rem;
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid black;
-}
-
-.colour {
-  cursor: pointer;
-}
-
-.colourOne {
-  background-color: #feff9c;
-  width: 2rem;
-  height: 2rem;
-}
-.colourTwo {
-  background-color: #ff7eb9;
-}
-.colourThree {
-  background-color: #7afcff;
-}
-.colourFour {
-  background-color: #cdfc93;
-}
-.colourFive {
-  background-color: #d2ccf2;
-}
-.colourSix {
-  background-color: #ffa6c1;
-}
-.colourSeven {
-  background-color: #feff68;
-}
-.colourEight {
-  background-color: #e4eeff;
-}
-
-.colourSelected {
-  border: 2px solid black;
 }

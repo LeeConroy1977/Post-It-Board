@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Board from "./components/Board";
 import CreateNote from "./components/CreateNote";
-import Header from "./components/Header";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
       <CreateNote createPostNote={createPostNote} />
       <Board />
     </div>

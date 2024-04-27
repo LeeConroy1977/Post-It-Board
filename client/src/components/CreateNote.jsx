@@ -6,7 +6,6 @@ import Preview from "./Preview";
 const initalObj = {
   task: "",
   colour: "#feff9c",
-  importance: "Low",
 };
 
 const CreateNote = () => {
