@@ -1,0 +1,6 @@
+.createNote {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  grid-template-rows: 35% 65%;
+}

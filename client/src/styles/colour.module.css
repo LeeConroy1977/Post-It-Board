@@ -1,0 +1,33 @@
+.colour {
+  cursor: pointer;
+  border: 1px solid rgb(44, 44, 44);
+}
+
+.colourOne {
+  background-color: #feff9c;
+}
+.colourTwo {
+  background-color: #ff7eb9;
+}
+.colourThree {
+  background-color: #7afcff;
+}
+.colourFour {
+  background-color: #cdfc93;
+}
+.colourFive {
+  background-color: #d2ccf2;
+}
+.colourSix {
+  background-color: #ffa6c1;
+}
+.colourSeven {
+  background-color: #feff68;
+}
+.colourEight {
+  background-color: #e4eeff;
+}
+
+.selected {
+  border: 3px solid black;
+}
