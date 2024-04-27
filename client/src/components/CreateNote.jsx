@@ -6,11 +6,12 @@ import Preview from "./Preview";
 const initalObj = {
   task: "",
   colour: "#feff9c",
-  priority: "low",
+  importance: "Low",
 };
 
 const CreateNote = () => {
   const [newNoteObj, setNewNoteObj] = useState(initalObj);
+  console.log(newNoteObj);
   return (
     <div className={styles.createNote}>
       <Preview newNoteObj={newNoteObj} />

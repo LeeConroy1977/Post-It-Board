@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "../styles/colour.module.css";
 
-const Colour = ({ colour, colourArr, setcolourArr }) => {
+const Colour = ({
+  colour,
+  colourArr,
+  setcolourArr,
+  newNoteObj,
+  setNewNoteObj,
+}) => {
   const { colourHex, isSelected, id } = colour;
+
   const handleClick = (e) => {
     const selectedID = Number(e.target.id);
     {
@@ -10,9 +17,9 @@ const Colour = ({ colour, colourArr, setcolourArr }) => {
         obj.id === selectedID
           ? (obj.isSelected = true)
           : (obj.isSelected = false);
+        console.log(obj.colourHex);
         setcolourArr(() => [...colourArr]);
-
-        console.log(colour);
+        setNewNoteObj((note) => (note = { ...note, colour: colourHex }));
       });
     }
   };
@@ -21,7 +28,14 @@ const Colour = ({ colour, colourArr, setcolourArr }) => {
     isSelected ? styles.selected : null
   }`;
 
-  return <div id={id} className={classname} onClick={handleClick}></div>;
+  return (
+    <div
+      id={id}
+      className={classname}
+      value={colourHex}
+      onClick={handleClick}
+    ></div>
+  );
 };
 
 export default Colour;

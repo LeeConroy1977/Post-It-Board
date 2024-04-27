@@ -10,8 +10,9 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
     const { name, value } = e.target;
 
     setNewNoteObj((obj) => (obj = { ...obj, [name]: value }));
+    console.log(newNoteObj);
   };
-  console.log(newNoteObj);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     createPostNote(newNoteObj);
@@ -31,8 +32,12 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
           rows="10"
           onChange={handleChange}
         ></textarea>
-        <Colours colour={colour} setNewNoteObj={setNewNoteObj} />
-        <Priorities />
+        <Colours
+          colour={colour}
+          setNewNoteObj={setNewNoteObj}
+          newNoteObj={newNoteObj}
+        />
+        <Priorities setNewNoteObj={setNewNoteObj} />
       </form>
     </div>
   );

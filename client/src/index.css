@@ -7,7 +7,7 @@ body {
 .app {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(209, 196, 235);
+  background-color: rgb(231, 223, 245);
   display: grid;
   grid-template-rows: 80px auto;
   grid-template-columns: repeat(8, 1fr);

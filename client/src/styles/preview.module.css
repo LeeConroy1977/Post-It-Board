@@ -15,3 +15,79 @@
   background-color: #feff9c;
   box-shadow: 10px 10px 13px -5px rgba(46, 46, 46, 0.67);
 }
+
+.colourOne {
+  background-color: #feff9c;
+}
+.colourTwo {
+  background-color: #ff7eb9;
+}
+.colourThree {
+  background-color: #7afcff;
+}
+.colourFour {
+  background-color: #cdfc93;
+}
+.colourFive {
+  background-color: #d2ccf2;
+}
+.colourSix {
+  background-color: #ffa6c1;
+}
+.colourSeven {
+  background-color: #feff68;
+}
+.colourEight {
+  background-color: #e4eeff;
+}
+
+.indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.Low {
+  background-color: #33ff57;
+}
+
+.Medium {
+  background-color: #fffe33;
+}
+
+.High {
+  background-color: #ff3333;
+}
+.Alert {
+  background-color: #ff3333;
+}
+
+.Alert,
+.Alert::before {
+  content: " ";
+  margin: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin: 0;
+  transition: all 0.3s;
+  background-color: #ff3333;
+}
+
+.Alert::before {
+  animation: mymove 2s infinite;
+  position: absolute;
+  background-color: #f3c4b4;
+}
+
+@-webkit-keyframes mymove {
+  50% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
