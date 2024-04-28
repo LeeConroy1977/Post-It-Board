@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* margin-top: 2rem; */
-  /* padding: 0 1rem; */
 }
 
 .form {
@@ -14,15 +12,15 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #e4eeff;
-  /* border: 1px solid black; */
-  box-shadow: 10px 10px 13px 2px rgba(46, 46, 46, 0.67);
+  background-color: var(--pale_blue);
+  box-shadow: var(--box_shadow_1);
 }
 
 .submitBtn {
   padding: 0.4rem 0.8rem;
-  background-color: #feff68;
-  border: 1px solid black;
+  background-color: var(--indicator_yellow);
+
+  border: 2px solid black;
   margin-top: 0.5rem;
   cursor: pointer;
   font-size: 0.75rem;
@@ -30,7 +28,6 @@
   font-family: "Noto Sans Georgian", sans-serif;
   margin-left: 1rem;
   margin-right: auto;
-  box-shadow: 8px 6px 8px -5px rgba(46, 46, 46, 0.67);
 }
 
 .submitBtn:hover {

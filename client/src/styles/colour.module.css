@@ -7,28 +7,28 @@
 }
 
 .colourOne {
-  background-color: #feff9c;
+  background-color: var(--pale_yellow);
 }
 .colourTwo {
-  background-color: #ff7eb9;
+  background-color: var(--pink);
 }
 .colourThree {
-  background-color: #7afcff;
+  background-color: var(--blue);
 }
 .colourFour {
-  background-color: #cdfc93;
+  background-color: var(--green);
 }
 .colourFive {
-  background-color: #d2ccf2;
+  background-color: var(--purple);
 }
 .colourSix {
-  background-color: #ffa6c1;
+  background-color: var(--pale_pink);
 }
 .colourSeven {
-  background-color: #feff68;
+  background-color: var(--yellow);
 }
 .colourEight {
-  background-color: #e4eeff;
+  background-color: var(--pale_blue);
 }
 
 .selected {

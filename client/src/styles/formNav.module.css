@@ -3,7 +3,7 @@
   height: 5%;
   display: flex;
   justify-content: flex-start;
-  box-shadow: 10px 10px 13px -5px rgba(46, 46, 46, 0.67);
+  box-shadow: var(--box_shadow_1);
 }
 .formNav ul {
   display: flex;
@@ -21,20 +21,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid white;
   cursor: pointer;
   font-family: "Noto Sans Georgian", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
-  /* margin-left: 0.2rem; */
 }
 
 .noteStyles {
-  background-color: #e4eeff;
+  background-color: var(--pale_blue);
 }
 .noteFonts {
-  background-color: #d2ccf2;
+  background-color: var(--purple);
 }
 .noteFontColour {
-  background-color: #cdfc93;
+  background-color: var(--green);
 }

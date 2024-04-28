@@ -31,19 +31,19 @@
 }
 
 .Low {
-  background-color: #33ff57;
+  background-color: var(--indicator_green);
 }
 
 .Medium {
-  background-color: #fffe33;
+  background-color: var(--indicator_yellow);
 }
 
 .High {
-  background-color: #ff3333;
+  background-color: var(--indicator_red);
 }
 
 .Alert {
-  background-color: #ff3333;
+  background-color: var(--indicator_red);
 }
 
 .Alert,
@@ -55,7 +55,7 @@
   border-radius: 50%;
   margin: 0 auto;
   transition: all 0.3s;
-  background-color: #ff3333;
+  background-color: var(--indicator_red);
 }
 
 .Alert::before {

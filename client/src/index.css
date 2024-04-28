@@ -1,3 +1,20 @@
+:root {
+  /* Colours */
+  --pale_yellow: #feff9c;
+  --pink: #ff7eb9;
+  --blue: #7afcff;
+  --green: #cdfc93;
+  --purple: #d2ccf2;
+  --pale_pink: #ffa6c1;
+  --yellow: #feff68;
+  --pale_blue: #e4eeff;
+  --indicator_green: #33ff57;
+  --indicator_yellow: #fffe33;
+  --indicator_red: #ff3333;
+  /* Box shadows */
+  --box_shadow_1: 10px 10px 13px 2px rgba(46, 46, 46, 0.67);
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
