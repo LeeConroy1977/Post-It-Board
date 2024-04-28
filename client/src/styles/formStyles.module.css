@@ -1,0 +1,21 @@
+.formStyles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  background-color: #e4eeff;
+}
+
+label {
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-right: auto;
+
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0rem;
+}

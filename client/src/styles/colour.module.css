@@ -1,6 +1,9 @@
 .colour {
   cursor: pointer;
   border: 2px solid rgb(103, 103, 103);
+  /* width: 4rem;
+  height: 4rem; */
+  margin: 0.3rem;
 }
 
 .colourOne {

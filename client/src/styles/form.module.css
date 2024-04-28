@@ -3,14 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  /* padding: 0 1rem; */
 }
 
 .formNav {
-  width: 80%;
+  width: 100%;
   height: 5%;
   display: flex;
   justify-content: flex-start;
+  box-shadow: 10px 10px 13px -5px rgba(46, 46, 46, 0.67);
 }
 .formNav ul {
   display: flex;
@@ -24,23 +26,26 @@
 .formNav ul li {
   list-style: none;
   height: 100%;
-  width: 33%;
+  width: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid white;
   cursor: pointer;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
   /* margin-left: 0.2rem; */
 }
 
 .noteStyles {
-  background-color: #feff9c;
+  background-color: #e4eeff;
 }
 .noteFonts {
-  background-color: #cdfc93;
+  background-color: #d2ccf2;
 }
 .noteFontColour {
-  background-color: #e4eeff;
+  background-color: #cdfc93;
 }
 
 .form {
@@ -48,19 +53,27 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 70%;
-  height: 80%;
-  background-color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #e4eeff;
   /* border: 1px solid black; */
-  padding: 1.4rem;
+  box-shadow: 10px 10px 13px 2px rgba(46, 46, 46, 0.67);
 }
 
-.form textarea {
-  width: 90%;
-  height: 30%;
-}
-label {
+.submitBtn {
+  padding: 0.4rem 0.8rem;
+  background-color: #feff68;
+  border: 1px solid black;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-left: 1rem;
   margin-right: auto;
+  box-shadow: 8px 6px 8px -5px rgba(46, 46, 46, 0.67);
+}
 
-  padding: 0.3rem 0.5rem;
+.submitBtn:hover {
+  box-shadow: none;
 }

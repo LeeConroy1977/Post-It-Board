@@ -6,17 +6,19 @@ import styles from "../styles/formStyles.module.css";
 const FormStyles = ({ handleChange, colour, setNewNoteObj, newNoteObj }) => {
   const { task } = newNoteObj;
   return (
-    <>
-      <label htmlFor="task">Add task</label>
+    <div className={styles.formStyles}>
+      <label htmlFor="task">Add Task</label>
       <textarea
         placeholder="Enter task..."
         style={{
-          border: " 1px solid black",
-          margin: "1rem",
-          padding: "1rem",
-          fontSize: "1rem",
-          fontFamily: "arial",
-          letterSpacing: "0.08rem",
+          width: "84%",
+          height: "22%",
+          border: " 2px solid black",
+          fontSize: "0.9rem",
+          fontFamily: "Noto Sans Georgian, sans-serif",
+          fontWeight: "bold",
+          letterSpacing: "0.05rem",
+          padding: "0.8rem",
         }}
         name="task"
         maxLength={20}
@@ -33,7 +35,7 @@ const FormStyles = ({ handleChange, colour, setNewNoteObj, newNoteObj }) => {
         newNoteObj={newNoteObj}
       />
       <Priorities setNewNoteObj={setNewNoteObj} />
-    </>
+    </div>
   );
 };
 

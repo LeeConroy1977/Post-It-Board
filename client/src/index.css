@@ -2,6 +2,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .app {
@@ -9,13 +11,13 @@ body {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 6% auto 6%;
+  grid-template-columns: 4% 20% 6% 66% 4%;
 
   background: linear-gradient(
       0deg,
       rgba(104, 104, 104, 0.4),
       rgba(70, 70, 70, 0.4)
     ),
-    url(https://helios-i.mashable.com/imagery/articles/064k3Whk4E5QjdCAND1XxqC/hero-image.fill.size_1248x702.v1623373640.jpg);
+    url(https://cdn.pixabay.com/photo/2024/04/08/01/23/brick-8682461_640.jpg);
 }

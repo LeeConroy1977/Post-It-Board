@@ -49,7 +49,7 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
             className={styles.noteFontColour}
             onClick={() => handleIsOpen("colours")}
           >
-            Colour
+            Colours
           </li>
         </ul>
       </nav>
@@ -66,6 +66,7 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
         ) : (
           <FontColours />
         )}
+        <button className={styles.submitBtn}>Submit</button>
       </form>
     </div>
   );

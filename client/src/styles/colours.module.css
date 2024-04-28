@@ -4,8 +4,7 @@
   grid-template-rows: repeat(2, 1fr);
   width: 90%;
   height: 28%;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 1px solid black;
+  padding: 0.15rem;
+  border: 2px solid black;
+  background-color: white;
 }

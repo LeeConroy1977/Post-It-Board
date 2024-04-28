@@ -8,7 +8,7 @@ const Colours = ({ colour, setNewNoteObj, newNoteObj }) => {
 
   return (
     <>
-      <label htmlFor="colourBox">Colours</label>
+      <label htmlFor="colourBox">Note Colours</label>
       <div className={styles.colourBox}>
         {colourArr &&
           colourArr.map((colour) => {
