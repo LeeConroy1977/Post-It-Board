@@ -10,7 +10,7 @@
 }
 
 .priorityLabel {
-  font-family: "Noto Sans Georgian", sans-serif;
+  font-family: var(--form_font);
   margin-right: auto;
   margin-top: 0.8rem;
   margin-bottom: 0.2rem;

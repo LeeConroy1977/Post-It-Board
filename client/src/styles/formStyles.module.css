@@ -9,7 +9,7 @@
 }
 
 label {
-  font-family: "Noto Sans Georgian", sans-serif;
+  font-family: var(--form_font);
   margin-right: auto;
 
   margin-bottom: 0.2rem;
