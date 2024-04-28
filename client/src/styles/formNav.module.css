@@ -1,0 +1,40 @@
+.formNav {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 10px 10px 13px -5px rgba(46, 46, 46, 0.67);
+}
+.formNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.formNav ul li {
+  list-style: none;
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  /* margin-left: 0.2rem; */
+}
+
+.noteStyles {
+  background-color: #e4eeff;
+}
+.noteFonts {
+  background-color: #d2ccf2;
+}
+.noteFontColour {
+  background-color: #cdfc93;
+}

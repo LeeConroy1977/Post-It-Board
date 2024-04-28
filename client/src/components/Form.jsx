@@ -7,6 +7,7 @@ import FormFonts from "../components/FormFonts";
 import FormStyles from "../components/FormStyles";
 import { useState } from "react";
 import FontColours from "./FontColours";
+import FormNav from "./FormNav";
 
 const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
   const [isOpen, setIsOpen] = useState("styles");
@@ -31,28 +32,7 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
 
   return (
     <div className={styles.formContainer}>
-      <nav className={styles.formNav}>
-        <ul>
-          <li
-            className={styles.noteStyles}
-            onClick={() => handleIsOpen("styles")}
-          >
-            Styles
-          </li>
-          <li
-            className={styles.noteFonts}
-            onClick={() => handleIsOpen("fonts")}
-          >
-            Fonts
-          </li>
-          <li
-            className={styles.noteFontColour}
-            onClick={() => handleIsOpen("colours")}
-          >
-            Colours
-          </li>
-        </ul>
-      </nav>
+      <FormNav handleIsOpen={handleIsOpen} />
       <form action="submit" className={styles.form} onSubmit={handleSubmit}>
         {isOpen === "styles" ? (
           <FormStyles
