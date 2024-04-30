@@ -6,24 +6,28 @@ const prioritiesArr = [
   {
     id: 1,
     importance: "Low",
+    importanceValue: 1,
     colourHex: "#33FF57",
     isSelected: true,
   },
   {
     id: 2,
     importance: "Medium",
+    importanceValue: 2,
     colourHex: "#FFFE33",
     isSelected: false,
   },
   {
     id: 3,
     importance: "High",
+    importanceValue: 3,
     colourHex: "#FF5733",
     isSelected: false,
   },
   {
     id: 4,
     importance: "Alert",
+    importanceValue: 4,
     colourHex: "#FF5733",
     isSelected: false,
   },

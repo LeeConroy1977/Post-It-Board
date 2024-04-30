@@ -12,7 +12,12 @@ const Priority = ({ level, levels, setLevels, setNewNoteObj }) => {
           obj.isSelected = true;
           console.log(obj.importance);
           setNewNoteObj(
-            (note) => (note = { ...note, importance: obj.importance })
+            (note) =>
+              (note = {
+                ...note,
+                importance: obj.importance,
+                importanceValue: obj.importanceValue,
+              })
           );
         } else {
           obj.isSelected = false;

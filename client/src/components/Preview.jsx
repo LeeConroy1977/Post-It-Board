@@ -11,9 +11,7 @@ const Preview = ({ newNoteObj }) => {
           <p>{date}</p>
         </div>
         <p>{newNoteObj.task}</p>
-        {!task && !importance ? (
-          <p className={styles.defaultText}>- - PREVIEW - -</p>
-        ) : null}
+        {!task ? <p className={styles.defaultText}>- - PREVIEW - -</p> : null}
       </div>
     </div>
   );

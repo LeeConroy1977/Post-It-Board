@@ -2,6 +2,7 @@
   display: grid;
   grid-column: 4 / span 1;
   grid-row: 2 / span 1;
+  /* overflow: scroll; */
 }
 .noteBoard {
   width: 100%;
@@ -9,4 +10,5 @@
   background-color: white;
   border: 8px solid rgb(67, 63, 63);
   box-shadow: var(--box_shadow_1);
+  overflow: scroll;
 }

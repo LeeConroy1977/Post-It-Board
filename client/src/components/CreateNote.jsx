@@ -6,15 +6,21 @@ import Preview from "./Preview";
 const initalObj = {
   task: "",
   colour: "#feff9c",
+  importance: "Low",
+  importanceValue: 1,
 };
 
-const CreateNote = () => {
+const CreateNote = ({ createPostNote }) => {
   const [newNoteObj, setNewNoteObj] = useState(initalObj);
-  console.log(newNoteObj);
+  // console.log(newNoteObj, "<<<<<<<");
   return (
     <div className={styles.createNote}>
       <Preview newNoteObj={newNoteObj} />
-      <Form newNoteObj={newNoteObj} setNewNoteObj={setNewNoteObj} />
+      <Form
+        newNoteObj={newNoteObj}
+        setNewNoteObj={setNewNoteObj}
+        createPostNote={createPostNote}
+      />
     </div>
   );
 };

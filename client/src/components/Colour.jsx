@@ -17,7 +17,6 @@ const Colour = ({
         obj.id === selectedID
           ? (obj.isSelected = true)
           : (obj.isSelected = false);
-        console.log(obj.colourHex);
         setcolourArr(() => [...colourArr]);
         setNewNoteObj((note) => (note = { ...note, colour: colourHex }));
       });

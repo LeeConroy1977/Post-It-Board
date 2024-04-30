@@ -6,25 +6,32 @@ import { v4 as uuidv4 } from "uuid";
 function App() {
   const [postItNotes, setPostItNotes] = useState([]);
 
-  const createPostNote = (noteObj) => {
-    const { task, colour, priority } = noteObj;
-    const date = new Date();
+  function createPostNote(noteObj) {
+    console.log(noteObj);
+    const { task, colour, importance, importanceValue } = noteObj;
+    const date = new Date().toLocaleDateString();
+    const dateString = new Date();
+    // console.log(date);
     const id = uuidv4();
 
     const newNoteObj = {
       id,
       task,
       colour,
-      priority,
+      importance,
+      importanceValue,
       date,
+      dateString,
     };
-    setPostItNotes([...postItNotes, newNoteObj]);
-  };
+    return setPostItNotes([...postItNotes, newNoteObj]);
+  }
+
+  console.log(postItNotes);
 
   return (
     <div className="app">
       <CreateNote createPostNote={createPostNote} />
-      <Board />
+      <Board postItNotes={postItNotes} setPostItNotes={setPostItNotes} />
     </div>
   );
 }

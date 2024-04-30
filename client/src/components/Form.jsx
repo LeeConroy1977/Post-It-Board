@@ -23,7 +23,7 @@ const Form = ({ createPostNote, setNewNoteObj, newNoteObj, initalObj }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     createPostNote(newNoteObj);
-    setNewNoteObj(initalObj);
+    // setNewNoteObj(initalObj);
   };
 
   const handleIsOpen = (navPage) => {
